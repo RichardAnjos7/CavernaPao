@@ -22,4 +22,10 @@
     <string name="sem_vendas">Nenhuma venda registrada.</string>
     <string name="sem_pedidos">Nenhum pedido registrado.</string>
     <string name="sem_itens_estoque">Nenhum item no estoque.</string>
+    <string name="dashboard_resumo">Resumo</string>
+    <string name="dashboard_faturamento">Faturamento total</string>
+    <string name="dashboard_pedidos_pendentes">Pedidos pendentes</string>
+    <string name="dashboard_itens_alerta">Itens em alerta</string>
+    <string name="subtitulo_main">Controle de vendas, pedidos e estoque</string>
+    <string name="acesso_rapido">Acesso rápido</string>
 </resources>

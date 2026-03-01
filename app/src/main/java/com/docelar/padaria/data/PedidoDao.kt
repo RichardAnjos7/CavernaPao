@@ -16,4 +16,7 @@ interface PedidoDao {
 
     @Query("UPDATE pedidos SET concluido = 1 WHERE id = :id")
     suspend fun marcarConcluido(id: Long)
+
+    @Query("SELECT COUNT(*) FROM pedidos WHERE concluido = 0")
+    fun quantidadePendentes(): Flow<Int>
 }

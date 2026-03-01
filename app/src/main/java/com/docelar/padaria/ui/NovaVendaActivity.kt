@@ -23,8 +23,6 @@ class NovaVendaActivity : AppCompatActivity() {
         title = getString(R.string.nova_venda)
 
         AccentInputFilter.install(binding.inputDescricao)
-        binding.btnInserirA.setOnClickListener { insertChar(binding.inputDescricao, "ã") }
-        binding.btnInserirC.setOnClickListener { insertChar(binding.inputDescricao, "ç") }
         binding.btnSalvarVenda.setOnClickListener { salvar() }
     }
 
@@ -54,12 +52,6 @@ class NovaVendaActivity : AppCompatActivity() {
             Toast.makeText(this@NovaVendaActivity, "Venda registrada!", Toast.LENGTH_SHORT).show()
             finish()
         }
-    }
-
-    private fun insertChar(editText: android.widget.EditText, char: String) {
-        val start = editText.selectionStart.coerceIn(0, editText.text?.length ?: 0)
-        editText.text?.insert(start, char)
-        editText.setSelection(start + char.length)
     }
 
     override fun onSupportNavigateUp(): Boolean {

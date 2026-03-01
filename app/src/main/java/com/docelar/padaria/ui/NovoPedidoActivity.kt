@@ -29,8 +29,6 @@ class NovoPedidoActivity : AppCompatActivity() {
         binding.inputDataEntregaLayout.error = null
         AccentInputFilter.install(binding.inputCliente)
         AccentInputFilter.install(binding.inputDescricao)
-        binding.btnInserirA.setOnClickListener { insertChar(binding.inputDescricao, "ã") }
-        binding.btnInserirC.setOnClickListener { insertChar(binding.inputDescricao, "ç") }
         binding.btnSalvarPedido.setOnClickListener { salvar() }
     }
 
@@ -75,12 +73,6 @@ class NovoPedidoActivity : AppCompatActivity() {
         } catch (_: Exception) {
             null
         }
-    }
-
-    private fun insertChar(editText: android.widget.EditText, char: String) {
-        val start = editText.selectionStart.coerceIn(0, editText.text?.length ?: 0)
-        editText.text?.insert(start, char)
-        editText.setSelection(start + char.length)
     }
 
     override fun onSupportNavigateUp(): Boolean {

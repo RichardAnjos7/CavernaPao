@@ -11,6 +11,9 @@ interface EstoqueDao {
     @Query("SELECT * FROM estoque WHERE quantidade <= quantidadeMinima")
     fun alertas(): Flow<List<ItemEstoque>>
 
+    @Query("SELECT COUNT(*) FROM estoque WHERE quantidade <= quantidadeMinima")
+    fun quantidadeAlertas(): Flow<Int>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun inserir(item: ItemEstoque): Long
 
