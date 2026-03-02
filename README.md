@@ -47,4 +47,4 @@ app/src/main/
 
 ## Licença
 
-Projeto educacional — uso livre para fins de estudo e extensão universitária.
+Projeto educacional para comunidade — uso livre para fins de estudo e extensão universitária - Wyden Martha Falcão.
