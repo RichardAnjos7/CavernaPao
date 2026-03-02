@@ -25,7 +25,7 @@ class NovoPedidoActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         title = getString(R.string.novo_pedido)
 
-        binding.inputDataEntrega.hint = "Ex: " + dateFormat.format(Date())
+        binding.inputDataEntregaLayout.helperText = "Ex: " + dateFormat.format(Date())
         binding.inputDataEntregaLayout.error = null
         AccentInputFilter.install(binding.inputCliente)
         AccentInputFilter.install(binding.inputDescricao)
