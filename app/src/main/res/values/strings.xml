@@ -28,4 +28,7 @@
     <string name="dashboard_itens_alerta">Itens em alerta</string>
     <string name="subtitulo_main">Controle de vendas, pedidos e estoque</string>
     <string name="acesso_rapido">Acesso rápido</string>
+    <string name="acesso_rapido_menu">Toque no menu ☰ para acessar Vendas, Pedidos e Estoque</string>
+    <string name="nav_app_bar_open_drawer_description">Abrir menu de navegação</string>
+    <string name="nav_app_bar_navigate_up_description">Fechar menu de navegação</string>
 </resources>
